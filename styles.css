@@ -97,7 +97,7 @@
     font-size: 1.2rem;
 }
 
-.signup-button {
+.signup-button, .hero button {
     background-color: rgb(250, 139, 2);
     color: white;
     border: none;
@@ -263,6 +263,7 @@
 }
 .destinations  .card{
     border-width: 0px;
+
 }
 .destinations .btn{
     width: 3rem;
@@ -337,49 +338,44 @@
 }
 
 .offers{
-    height: 500px;
+    height: 31.25rem;
     width: 100%;
     display: flex;
     align-items: end;
     background-color: white;
     position: relative;
 }
-
 .camera-lady{
     background-color: #FCB967;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     display: flex;
     align-items: center;
 
 }
-
 .camera-lady-card{
-    height: 300px;
-    width: 500px;
+    height: 18.75rem;
+    width: 31.25rem;
     border-radius: 30px;
     margin-left: 12%;
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
-    padding: 30px;
+    padding: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .camera-lady-title{
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 900;
-    line-height: 35px;
-    margin-bottom: 20px;
+    line-height: 2.2rem;
+    margin-bottom: 1.25rem;
 }
-
 .camera-lady-button{
     
-    margin-top: 30px;
+    margin-top: 1.8rem;
     width: 50%;
 }
-
 .camera-lady-img {
     background-image: url("./Hero Page/special_offers/special_offers01.svg");
     background-size: contain; 
@@ -388,10 +384,10 @@
     position: absolute;
     right: 13%;
     top: 0;
-    width: 100%; /* Adjust width and height as needed */
-    height: 100%; /* Adjust to fit the container */
-    
+    width: 100%; 
+    height: 100%; 
 }
+
 
 .services{
     margin: 5rem 10rem;
@@ -405,35 +401,30 @@
 
 .cycle-outer{
     width: 100%;
-    height: 600px;
+    height: 37.5rem;
     background-color: white;
     position: relative;
 }
-
 .cycle-inner{
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     background-color: #FCB967;
     display: flex;
 }
-
 .cycle-inner-card{
-    height: 200px;
-    width: 700px;
+    height: 12.5rem;
+    width: 43.75rem;
 }
-
 .father-card{
     margin-left: 22%;
     margin-top: 5%;
     text-align: center;
 }
-
 .cycle-card-title{
     font-size: x-large; 
     font-weight: 900;
-    height: 100px;
+    height: 6.25rem;
 }
-
 .form{
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
@@ -441,36 +432,29 @@
     padding-bottom: 20px;
     margin-top: 5%;
 }
-
 .fields{
     text-align: left;
     padding: 20px;
     padding-bottom: 0px;
-    height: 300px;
+    height: 18.75rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-
-
-
 .field{
-    height: 70px;
-    padding-left: 15px;
+    height: 4.4rem;
+    padding-left: 0.9rem;
 }
-
 .field label{
     color: #5c5b5b;
     font-weight:bold ;
 }
-
 .field input, .field select{
     border-radius: 5px;
     color: #8D8D8D;
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
 }
-
 .cycle-img{
     background-image: url('./Hero Page/book_a_bike/bike picture.png');
     background-size: contain; 
@@ -624,10 +608,18 @@
 .slider{
     z-index: 10;
 }
+.about{
+    margin: 10rem 20rem;
+}
 
-
+.aboutpara{
+    padding: 2rem 7rem;
+}
 /* Responsive Styling */
 @media (max-width: 968px) {
+    .destinations{
+        margin: 5rem 5rem;
+    }
     .footer .row {
         text-align: center;
     }
@@ -689,7 +681,25 @@
     .dancing-script{
         font-size: 3rem;
     }
-
+    .camera-lady-img{
+        display: none;
+    }
+    .customer {
+        margin: 5rem 5rem;
+    }
+    .services{
+        margin: 5rem 5rem;
+    }
+    .about{
+        margin: 5rem 10rem;
+    }
+    .abouttext{
+        font-size: 2rem;  
+    }
+    .aboutpara{
+        font-size: 1rem;
+        padding: 1rem 3rem;
+    }
 
 }
 @media (max-width: 1500px){
@@ -715,5 +725,72 @@
         font-size: 0;
     }
 
+    .father-card{
+        margin-left: 10%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .cycle-img{
+        height: 70%;
+        width: 50%; 
+        top: 8%;
+        left: 70%;
+    }
+    .packages{
+        margin: 5rem 5rem;
+    }
+    .packages button {
+        width: 12rem;
+    }
+    .about{
+        margin: 5rem 10rem;
+    }
+    .abouttext{
+        font-size: 2.5rem;  
+    }
+    .aboutpara{
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+    .works>.row{
+        margin: 5rem 5rem;
+    }
 }
-
+@media (max-width: 768px) {
+    .welcome > .intro > div span{
+        font-size: 1rem;
+    }
+    .welcome > .intro > div > p{
+        padding-left: 0rem;
+        padding-right: 1rem;
+        color: #8D8D8D;
+    }
+    .welcome > .intro > div {
+        flex-direction: column;
+    }
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 13vw;
+        margin-bottom: 5rem;
+    }
+    .welcome > .image > img{
+        height: 75vh;
+        width: 75vw;
+        margin-bottom: 2rem;
+    }
+    .cycle-img{
+        display: none;
+    }
+    .about{
+        margin: 1rem 2rem;
+    }
+    .abouttext{
+        font-size: 2rem;  
+    }
+    .aboutpara{
+        font-size: 1.2rem;
+        padding: 1rem 3rem;
+    }
+}
