@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuscany</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="nav-bar-hero ">
+    <div class="nav-bar">
+       <div class="nav-bar-logo"></div>
+       <ul class="nav-links">
+           <li><a href="#home" class="nav-link">Home</a></li>
+           <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+           <li><a href="#tour-packages" class="nav-link">Tour Packages</a></li>
+           <li><a href="#contact" class="nav-link">Contact Us</a></li>
+       </ul>
+       <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+       <div class="nav-bar-acc">
+           <div class="nav-bar-lang">
+               <ul class="dropdown">
+                   <a href="#" class="nav-link" style="margin-top: 18px;">Eng &#9662;</a>
+                   <div class="dropdown-content">
+                     <a href="#">English</a>
+                     <a href="#">Spanish</a>
+                     <a href="#">French</a>
+                     <a href="#">German</a>
+                   </div>
+               </ul>
+           </div>
+           <div class="login nav-link">Login</div>
+           <button class="signup-button">Sign Up</button>
+       </div>
+   </div>
+
+   <div class="hero">
+       <div class="hero-text">
+           <span class="dancing-script" style="line-height: 1.6;">Enjoy in the best way!</span><br>Enjoy our services for your trip anytime
+       </div>
+       <div class="hero-tour">
+           <div class="hero-tour-inner">
+               <div class="hero-tour-inner-choice">
+                   <div class="hero-public-tour" id="public-tour">
+                       <i class="fas fa-globe"></i> Public Tours
+                   </div>
+                   <div class="hero-private-tour" id="private-tour">
+                       <i class="fas fa-users"></i> Private Tours
+                   </div>
+               </div>
+               <div class="hero-tour-opts">
+                   <div class="choice">
+                       <i class="fa-solid fa-users"></i> <span class="text">Number of people</span><br>
+                       <span class="choose">Choose People &#9662;</span>
+                   </div>
+                   <div class="choice with-line line-right">
+                       <i class="fa-solid fa-calendar-days"></i><span class="text"> Date</span><br>
+                       <span class="choose">Choose date &#9662;</span>
+                   </div>
+                   <div class="choice with-line line-right">
+                       <i class="fa-solid fa-clock"></i><span class="text">Time</span> <br>
+                       <span class="choose">Choose time &#9662;</span>
+                   </div>
+                   <div class="choice with-line line-right">
+                       <i class="fa-solid fa-flag"></i> <span class="text">Tour</span><br>
+                       <span class="choose">Select tour &#9662;</span>
+                   </div>
+                   <div class="choice last">
+                       <div>
+                           <i class="fa-solid fa-car"></i><span class="text">Transportation</span> <br>
+                           <span class="choose">Select transportation &#9662;</span>
+                       </div>
+                       <div class="button">
+                        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                       </div>
+                        
+                   </div>
+               </div>                    
+           </div>
+       </div>
+   </div>
+</div>
+
+    <section class="destinations">
+        <div class="dest_header">
+            <h3 style="margin: 3rem 0rem;">Explore Our Popular Destinations</h3>
+            <div>
+              <button type="button" class="btn btn-outline-dark"><</button>
+              <button type="button" class="btn btn-outline-dark">></button>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Hero Page/popular_dest/popular_dest_1.svg" class="card-img-top" alt="Photo of lucca bike tour">
+                <div class="card-body">
+                  <h5 class="card-title">Lucca Bike Tour</h5>
+                  <h6>from <span class="dest_cost">34 €</span></h6>
+                  <div class="dest_icons">
+                    <div class="dest_left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                        </svg>
+                        <p>EVERY DAY</p>
+                    </div>
+                    <div class="dest_left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-people" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                        </svg>
+                        <p>3 - 10 PP</p>
+                    </div>
+                  </div>
+                  <p class="card-text">A tour of the city and its surroundings led by a professional guide...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Hero Page/popular_dest/popular_dest_2.svg" class="card-img-top" alt="aesthetic wine bottle on table with grapes">
+                <div class="card-body">
+                  <h5 class="card-title">Wine tasting in Tuscany</h5>
+                  <h6>from <span class="dest_cost">34 €</span></h6>
+                  <div class="dest_icons">
+                    <div class="dest_left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                        </svg>
+                        <p>MONDAY</p>
+                    </div>
+                    <div class="dest_left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-people" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                        </svg>
+                        <p>10 - 30 PP</p>
+                    </div>
+                  </div>
+                  <p class="card-text">The real magic is here where you can enjoy the best Tuscan wine and eat ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Hero Page/popular_dest/popular_dest_3.svg" class="card-img-top" alt="Cinque terre beautiful landscape with houses">
+                <div class="card-body">
+                  <h5 class="card-title">Cinque Terre Tour</h5>
+                  <h6>from <span class="dest_cost">34 €</span></h6>
+                  <div class="dest_icons">
+                    <div class="dest_left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                        </svg>
+                        <p>TO BE DECIDED</p>
+                    </div>
+                    <div class="dest_left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-people" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                        </svg>
+                        <p>10 - 50 PP</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Visiting the 5 Terre is a must, and you can never go there enough ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="./Hero Page/popular_dest/popular_dest_4.svg" class="card-img-top" alt="Lush green landscape with trees mountains and a house at distant">
+                  <div class="card-body">
+                    <h5 class="card-title">Siena and Surroundings</h5>
+                    <h6>from <span class="dest_cost">34 €</span></h6>
+                    <div class="dest_icons">
+                        <div class="dest_left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                            <p>TO BE DECIDED</p>
+                        </div>
+                        <div class="dest_left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-people" viewBox="0 0 16 16">
+                                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                            </svg>
+                            <p>5 - 10 PP</p>
+                        </div>
+                      </div>
+                    <p class="card-text">Visit the beautiful Siena and the cities that surround it to experience ...</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="welcome">
+      <div class="image">
+        <img src="./Hero Page/best_company/best_company01.svg" alt="a girl with a phone photo">
+      </div>
+      <div class="intro">
+        <h6 style="color: #858585;">WELCOME TO OUR SITE!</h6>
+        <h3 style="font-weight: 700;">We are the best company for your visit</h3>
+        <hr style="height: 0px; width: 0px;"/>
+        <p>After decades of experience, and a whole life in Lucca, we offer you the most complete tourism service in the city. In addition to having bikes and rickshaws to have as much fun as you want, you have the choice of tour guides with whom to tour and drivers for your every need! We offer packages in the way that you get the most at the lowest price. Book with us and we will always be available for you!</p>
+        <div>
+          <p><span>20+</span> Year Experience</p>
+          <p><span>100+</span> Happy Customer</p>
+          <p><span>15+</span> Choice of Services</p>
+          <p><span>10+</span> Professional Guides</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="camera-lady">
+        <div class="camera-lady-card">
+          <div class="camera-lady-title">Get Special Offers for<br>Organization</div>
+          <div>Lorem Ipsum is simply dummy text of the printing and
+            typesetting <br> industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.
+          </div>
+          <button class="camera-lady-button signup-button">Contact Us</button>
+        </div>
+        <div class="camera-lady-img"></div>
+      </div>
+    </section>
+
+
+    <section class="services">
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/services/services01.svg" class="card-img-top" alt="Bicycle stand">
+            <div class="card-body">
+              <h5 class="card-title h-50">Bike and rickshaw rental</h5>
+              <p class="card-text">Book your quality vehicle quickly for an hour or all day!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/services/services02.svg" class="card-img-top" alt="field visiting">
+            <div class="card-body">
+              <h5 class="card-title h-50">Guided tour of the countryside</h5>
+              <p class="card-text">Live the real Lucchese experience by visiting the suburbs by bike!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/services/services03.svg" class="card-img-top" alt="A man with taxi">
+            <div class="card-body">
+              <h5 class="card-title h-50">Taxi and NCC service</h5>
+              <p class="card-text">Do you need not only a bike but also a driver? Then you have found the right place!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/services/services04.svg" class="card-img-top" alt="A bus">
+            <div class="card-body">
+              <h5 class="card-title h-50">Bus Package</h5>
+              <p class="card-text">Do you need not only a bike but also a driver? Then you have found the right place!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cycle-outer">
+      <div class="cycle-inner">
+        <div class="cycle-inner-card">
+          <div class="father-card">
+            <span class="cycle-card-title">Book Now Bike</span> 
+            <div class="form">
+              <div class="fields">
+                <div class="field">
+                  <label for="name">Name and Surname</label><br>
+                  <input type="text" id="name" name="name" placeholder="    Enter your name and surname">
+                </div>
+                <div class="field">
+                  <label for="email">Email Address</label><br>
+                  <input type="email" id="email" name="email" placeholder="    Enter your email address">
+                </div>
+                <div class="field">
+                  <label for="telephone">Telephone Number</label><br>
+                  <input type="tel" id="telephone" name="telephone" placeholder="    Enter your telephone number">
+                </div>
+                <div class="field">
+                  <label for="service-type">    Service Type</label><br>
+                  <select id="service-type" name="service-type">
+                    <option value="">Select the service types</option>
+                    <option value="repair">Bike Repair</option>
+                    <option value="maintenance">Bike Maintenance</option>
+                    <option value="customization">Bike Customization</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="date">Date</label><br>
+                  <input  id="date" name="date" placeholder="    Date">
+                </div>
+                <div class="field">
+                  <label for="time">Time</label><br>
+                  <input id="time" name="time" placeholder="    Time">
+                </div>
+              </div>
+              <div class="cycle-card-button" style="display: flex; justify-content: center;">
+                <button class="signup-button" type="submit" >Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cycle-img">
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="packages">
+      <h3>The Most Popular Packages</h3>
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/popular_package/pop_package01.svg" class="card-img-top" alt="Bicycle stand">
+            <div class="card-body">
+              <h5 class="card-title">BIKE / RICKSHAW</h5>
+              <p class="card-text"><span class="euro">€</span><span class="num">10</span> /day</p>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                <p>Your bike for a day</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-building" viewBox="0 0 16 16">
+                  <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                </svg>
+                <p>City App</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-ticket" viewBox="0 0 16 16">
+                  <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z"/>
+                </svg>
+                <p>Discount on Rickshaw</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-headset" viewBox="0 0 16 16">
+                  <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                </svg>
+                <p>Guaranteed Support</p>
+              </li>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/popular_package/pop_package02.svg" class="card-img-top" alt="field visiting">
+            <div class="card-body">
+              <h5 class="card-title">BIKE TOURS</h5>
+              <p class="card-text"><span class="euro">€</span><span class="num">30</span> /day</p>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                <p>Your bike for a day</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-building" viewBox="0 0 16 16">
+                  <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                </svg>
+                <p>City App</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-ticket" viewBox="0 0 16 16">
+                  <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z"/>
+                </svg>
+                <p>Discount on Rickshaw</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-headset" viewBox="0 0 16 16">
+                  <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                </svg>
+                <p>Guaranteed Support</p>
+              </li>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/popular_package/pop_package03.svg" class="card-img-top" alt="A man with taxi">
+            <div class="card-body">
+              <h5 class="card-title">BUS TRIPS</h5>
+              <p class="card-text"><span class="euro">€</span><span class="num">45</span> /day</p>
+              <div class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                <p>Your bike for a day</p>
+              </div>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-building" viewBox="0 0 16 16">
+                  <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                </svg>
+                <p>City App</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-ticket" viewBox="0 0 16 16">
+                  <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z"/>
+                </svg>
+                <p>Discount on Rickshaw</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-headset" viewBox="0 0 16 16">
+                  <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                </svg>
+                <p>Guaranteed Support</p>
+              </li>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Hero Page/popular_package/pop_package04.svg" class="card-img-top" alt="A bus">
+            <div class="card-body">
+              <h5 class="card-title">TRANSFER</h5>
+              <p class="card-text"><span class="euro">€</span><span class="num">10</span> /day</p>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-calendar" viewBox="0 0 16 16" >
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                <p>Your bike for a day</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-building" viewBox="0 0 16 16">
+                  <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                </svg>
+                <p>City App</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-ticket" viewBox="0 0 16 16">
+                  <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z"/>
+                </svg>
+                <p>Discount on Rickshaw</p>
+              </li>
+              <li class="lines">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FCB967" class="bi bi-headset" viewBox="0 0 16 16">
+                  <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                </svg>
+                <p>Guaranteed Support</p>
+              </li>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer">
+      <div class="cust_header">
+        <h3 style="margin: 3rem 0rem;">Happy Customers Says</h3>
+        <div>
+          <button type="button" class="btn btn-outline-dark"><</button>
+          <button type="button" class="btn btn-outline-dark">></button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-person-circle mx-auto" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+            <div class="card-body">
+              <h5 class="card-title">Lyod Gomez</h5>
+              <p class="card-text text-start mt-4">But I must explain to yout how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-person-circle mx-auto" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+            <div class="card-body">
+              <h5 class="card-title">Lyod Gomez</h5>
+              <p class="card-text text-start mt-4">But I must explain to yout how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="./logo.svg" alt="Logo" class="mb-3" style="max-width: 100px;">
+        </div>
+        <hr style="color: #8D8D8D;"/>
+          <div class="row pt-3">
+              <!-- Services -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h5>Services</h5>
+                  <ul class="list-unstyled">
+                      <li>Bike and Rickshaw rental</li>
+                      <li>Guided Tours of Lucca</li>
+                      <li>Guided Bike Tour of Lucca</li>
+                      <li>Trip In The Tuscan Hills</li>
+                      <li>Transportation With Luxury Cars</li>
+                      <li>Wine Tours By Bus With Guide</li>
+                  </ul>
+              </div>
+  
+              <!-- Home -->
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5>Home</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Tour Packages</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Help -->
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5>Help</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Terms of Use</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Contacts -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h5>Contacts</h5>
+                  <ul class="list-unstyled">
+                      <li><i class="bi bi-geo-alt-fill"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FA8B02" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                      </svg> Piazza Napoleone, Lucca, Tuscany</li>
+                      <li><i class="bi bi-telephone-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FA8B02" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                      </svg> +39 346 368 5708</li>
+                      <li><i class="bi bi-envelope-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FA8B02" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                      </svg> italiainlimo@gmail.com</li>
+                  </ul>
+              </div>
+  
+              <!-- Social Media -->
+              <div class="col-lg-2 text-center">
+                <h5>Social Media</h5>
+                  <ul class="list-inline d-flex justify-content-center">
+                      <li class="list-inline-item p-1">
+                          <a href="#"><i class="bi bi-twitter" style="font-size: 1.5rem; color: orange;"></i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                          </svg></a>
+                      </li>
+                      <li class="list-inline-item p-1">
+                          <a href="#"><i class="bi bi-facebook" style="font-size: 1.5rem; color: orange;"></i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg></a>
+                      </li>
+                      <li class="list-inline-item p-1">
+                          <a href="#"><i class="bi bi-instagram" style="font-size: 1.5rem; color: orange;"></i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg></a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+            <hr style="color: #8D8D8D;"/>
+          <div class="row">
+              <div class="col-12 text-center pt-3">
+                  <p>Copyright © 2022. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+      const publicTour = document.getElementById('public-tour');
+      const privateTour = document.getElementById('private-tour');
+
+      publicTour.addEventListener('click', () => {
+          if (publicTour.style.backgroundColor !== 'white') {
+              publicTour.style.backgroundColor = 'white';
+              publicTour.style.color = 'rgb(250, 139, 2)';
+              privateTour.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+              privateTour.style.color = 'white';
+          }
+      });
+
+      privateTour.addEventListener('click', () => {
+          if (privateTour.style.backgroundColor !== 'white') {
+              privateTour.style.backgroundColor = 'white';
+              privateTour.style.color = 'rgb(250, 139, 2)';
+              publicTour.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+              publicTour.style.color = 'white';
+          }
+      });
+
+      document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
